@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+      integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>FriendBook</title>
+  </head>
+  <body>
+    <div class="container">
+      <nav>
+        <div class="nav-left">
+          <div class="logo">
+            <img src="images/logo.png" alt="Website logo" />
+          </div>
+          <div class="search-box">
+            <i class="fa-solid fa-magnifying-glass"></i>
+            <input type="text" name="search" id="seatch FriendBook" />
+          </div>
+        </div>
+        <div class="nav-center">
+          <i class="fa-solid fa-house"></i>
+          <a href=""><i class="fa-solid fa-tv"></i></a>
+          <a href=""><i class="fa-solid fa-store"></i></a>
+          <a href=""><i class="fa-solid fa-users"></i></a>
+          <a href=""><i class="fa-solid fa-gamepad"></i></a>
+        </div>
+        <div class="nav-right">
+          <i class="fa-solid fa-bars"></i>
+          <i class="fa-brands fa-facebook-messenger"></i>
+          <i class="fa-solid fa-bell"></i>
+          <img
+            src="images/person1.jpeg"
+            alt="your profile picture"
+            class="profile-pic"
+            onclick="openCard()"
+          />
+          <div class="card-menu-wrap" id="cardWrap">
+            <div class="card-menu">
+              <div class="profile-menu">
+                <img src="images/person1.jpeg" alt="your profile picture" />
+                <p>Emily Rodriguez</p>
+              </div>
+              <a href="#" class="card-menu-items">
+                <img src="images/gear-solid.svg" alt="Settings icon" />
+                <p>Settings & Privacy</p>
+                <span>></span>
+              </a>
+              <a href="#" class="card-menu-items">
+                <img src="images/question-solid.svg" alt="Help icon" />
+                <p>Help & Support</p>
+                <span>></span>
+              </a>
+              <a href="#" class="card-menu-items">
+                <img
+                  src="images/users-rectangle-solid.svg"
+                  alt="Display icon"
+                />
+                <p>Display & Accesibility</p>
+                <span>></span>
+              </a>
+              <a href="#" class="card-menu-items">
+                <img src="images/comment-dots-solid.svg" alt="Feedback icon" />
+                <p>Give Feedback</p>
+              </a>
+              <a href="#" class="card-menu-items">
+                <img
+                  src="images/arrow-right-from-bracket-solid.svg"
+                  alt="Logout icon"
+                />
+                <p>Logout</p>
+              </a>
+            </div>
+          </div>
+        </div>
+      </nav>
+      <div class="main">
+        <div class="main-left">
+          <div class="img">
+            <img src="images/person1.jpeg" alt="" />
+            <p>Emily Rodriguez</p>
+          </div>
+          <div class="img">
+            <img src="images/user-group-solid.svg" alt="" />
+            <p>Friends</p>
+          </div>
+          <div class="img">
+            <img src="images/newspaper-solid.svg" alt="" />
+            <p>News</p>
+          </div>
+          <div class="img">
+            <img src="images/users-line-solid.svg" alt="" />
+            <p>Groups</p>
+          </div>
+          <div class="img">
+            <img src="images/store-solid.svg" alt="" />
+            <p>Marketplace</p>
+          </div>
+          <div class="img">
+            <img src="images/youtube.svg" alt="" />
+            <p>Watch</p>
+          </div>
+          <div class="img">
+            <img src="images/chevron-down-solid.svg" alt="" />
+            <p>See More</p>
+          </div>
+          <hr />
+
+          <div class="shortcuts">
+            <p>Your Shortcuts</p>
+            <a href="#">Edit</a>
+          </div>
+
+          <div class="img">
+            <img src="images/game.png" alt="" />
+            <p>Bubble Game</p>
+          </div>
+          <div class="img">
+            <img src="images/crush.jpg" alt="" />
+            <p>Candy Crash Saga</p>
+          </div>
+          <div class="img">
+            <img src="images/shooter.png" alt="" />
+            <p>Bubble Shooter</p>
+          </div>
+        </div>
+        <div class="main-center">
+          <div class="top-box">
+            <div class="my-story">
+              <img src="images/person1.jpeg" alt="" />
+              <div class="upload">
+                <img src="images/plus-solid.svg" alt="" />
+                <p>Add Your Story</p>
+              </div>
+            </div>
+            <div class="friends-story">
+              <img
+                src="images/medium-shot-woman-wearing-headphones_23-2149818230.avif"
+                alt=""
+              />
+              <div class="friend-profile">
+                <img src="images/person7.jpeg" alt="" />
+                <div class="circle"></div>
+              </div>
+              <div class="friend-name">
+                <p>Isabella Martinez</p>
+              </div>
+            </div>
+            <div class="friends-story">
+              <img
+                src="images/front-view-girl-cycling-outdoors_23-2150348435.jpg"
+                alt=""
+              />
+              <div class="friend-profile">
+                <img src="images/person2.jpeg" alt="" />
+                <div class="circle"></div>
+              </div>
+              <div class="friend-name">
+                <p>Jacob Anderson</p>
+              </div>
+            </div>
+            <div class="friends-story">
+              <img
+                src="images/side-view-smiley-girl-wearing-hat_23-2149818195.jpg"
+                alt=""
+              />
+              <div class="friend-profile">
+                <img src="images/person4.jpeg" alt="" />
+                <div class="circle"></div>
+              </div>
+              <div class="friend-name">
+                <p>Ashley Patel</p>
+              </div>
+            </div>
+          </div>
+          <div class="create-post">
+            <div class="ptop">
+              <img src="images/person1.jpeg" alt="" />
+              <input type="text" placeholder="What's on your mind?" />
+            </div>
+            <hr />
+            <div class="pbottom">
+              <div class="post-icon">
+                <i class="fa-solid fa-video red"></i>
+                <p>Live Video</p>
+              </div>
+              <div class="post-icon">
+                <i class="fa-solid fa-images green"></i>
+                <p>Photo/Video</p>
+              </div>
+              <div class="post-icon">
+                <i class="fa-solid fa-face-grin yellow"></i>
+                <p>Feelings/Activity</p>
+              </div>
+            </div>
+          </div>
+          <div class="friends-post">
+            <div class="friends-ptop">
+              <div class="img-name">
+                <img src="images/person7.jpeg" alt="" />
+                <div class="friends-name">
+                  <p class="friends-name">Isabella Martinez</p>
+                  <p class="time">2h. <i class="fa-solid fa-users"></i></p>
+                </div>
+              </div>
+              <div class="menu">
+                <i class="fa-solid fa-ellipsis"></i>
+              </div>
+            </div>
+            <img
+              src="images/portrait-smiling-friends-standing-beach_1048944-28658596.avif"
+              alt=""
+            />
+            <div class="info">
+              <div class="post-icons">
+                <img src="images/thumbs-up-solid.svg" alt="" />
+                <img src="images/face-laugh-squint-solid.svg" alt="" />
+                <img src="images/heart-solid.svg" alt="" />
+                <p>You, Olivia and 1.2k others</p>
+              </div>
+              <div class="comment">
+                <p>221 comments</p>
+                <p>89 Shares</p>
+              </div>
+            </div>
+            <hr />
+            <div class="like">
+              <div class="like-icon">
+                <i class="fa-solid fa-thumbs-up active"></i>
+                <p>Like</p>
+              </div>
+              <div class="like-icon">
+                <i class="fa-solid fa-message"></i>
+                <p>Comments</p>
+              </div>
+              <div class="like-icon">
+                <i class="fa-solid fa-share"></i>
+                <p>Shares</p>
+              </div>
+            </div>
+            <hr />
+            <div class="comment-wrapper">
+              <img src="images/person1.jpeg" alt="" />
+              <div class="circle"></div>
+            </div>
+            <div class="comment-search">
+              <input type="text" placeholder="Write a Comment" />
+              <i class="fa-regular fa-face-smile"></i>
+              <i class="fa-soli fa-camera"></i>
+              <i class="fa-regular fa-note-sticky"></i>
+            </div>
+          </div>
+        </div>
+        <div class="main-right">
+          <div class="sponsored-section">
+            <h4>Sponsored</h4>
+            <div class="sponsored-link">
+              <img src="images/office.jpeg" alt="" />
+              <p>
+                Online advertisement Services <br />
+                <a href="#">onlineservices.com</a>
+              </p>
+            </div>
+            <div class="sponsored-link">
+              <img src="images/office.jpeg" alt="" />
+              <p>
+                Online advertisement Services <br />
+                <a href="#">onlineservices.com</a>
+              </p>
+            </div>
+          </div>
+          <hr />
+          <div class="page-section">
+            <h4>Your Pages and profile</h4>
+            <div class="page-links">
+              <img src="images/person1.jpeg" alt="" />
+              <p>Emily Rodriguez</p>
+            </div>
+            <div class="page-links-item">
+              <img src="images/user-solid.svg" alt="" />
+              <p>Switch to page</p>
+            </div>
+            <div class="page-links-item">
+              <img src="images/bullhorn-solid.svg" alt="" />
+              <p>Create Promotion</p>
+            </div>
+          </div>
+          <hr />
+          <div class="friend-section">
+            <h4>Friend Requests</h4>
+            <div class="page-links">
+              <img src="images/person2.jpeg" alt="" />
+              <p>Jacob Anderson</p>
+            </div>
+            <div class="buttons">
+              <button type="submit" class="confirm">Confirm</button>
+              <button type="submit" class="delete">Delete</button>
+            </div>
+          </div>
+          <hr />
+          <div class="contact-section">
+            <div class="contact-search">
+              <h4>Contacts</h4>
+              <img src="images/magnifying-glass-solid.svg" alt="" />
+              <img src="images/chevron-down-solid.svg" alt="" />
+            </div>
+            <div class="page-links">
+              <div class="online">
+                <img src="images/person3.jpeg" alt="" />
+              </div>
+              <p>Samantha White</p>
+            </div>
+            <div class="page-links">
+              <div class="online">
+                <img src="images/person4.jpeg" alt="" />
+              </div>
+              <p>Ashley Patel</p>
+            </div>
+            <div class="page-links">
+              <div class="online">
+                <img src="images/person5.jpeg" alt="" />
+              </div>
+              <p>Olivia Thompson</p>
+            </div>
+            <div class="page-links">
+              <div class="online">
+                <img src="images/person6.jpeg" alt="" />
+              </div>
+              <p>Madison Carter</p>
+            </div>
+            <div class="page-links">
+              <div class="online">
+                <img src="images/person7.jpeg" alt="" />
+              </div>
+              <p>Isabella Martinez</p>
+            </div>
+            <div class="page-links">
+              <div class="online">
+                <img src="images/person8.jpeg" alt="" />
+              </div>
+              <p>Hannah Johnson</p>
+            </div>
+            <div class="page-links">
+              <div class="online">
+                <img src="images/person9.jpeg" alt="" />
+              </div>
+              <p>Benjamin Lee</p>
+            </div>
+            <div class="page-links">
+              <div class="online">
+                <img src="images/person10.jpeg" alt="" />
+              </div>
+              <p>William Taylor</p>
+            </div>
+            <div class="page-links">
+              <div class="online">
+                <img src="images/person11.jpeg" alt="" />
+              </div>
+              <p>Ethan Clark</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
